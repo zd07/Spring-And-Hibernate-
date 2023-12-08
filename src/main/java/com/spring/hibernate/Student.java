@@ -23,6 +23,7 @@ public class Student {
     //@column can be used to specify column mapping for example to change column name
     private String name;
     private String city;
+    private Certificate certi;
 
     public int getId() {
         return id;
@@ -57,6 +58,14 @@ public class Student {
         this.city = city;
     }
 
+    public Certificate getCerti() {
+        return certi;
+    }
+
+    public void setCerti(Certificate certi) {
+        this.certi = certi;
+    }
+    
     @Override
     public String toString() {
         return "Student{" + "id=" + id + ", name=" + name + ", city=" + city + '}';
